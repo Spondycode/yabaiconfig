@@ -1,0 +1,104 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <!-- default layout (can be bsp, stack or float) -->
+        <key>default_layout</key>
+        <string>bsp</string>
+
+        <!-- Custom space names -->
+        <key>space_1</key>
+        <dict>
+            <key>label</key>
+            <string>one</string>
+        </dict>
+        <key>space_2</key>
+        <dict>
+            <key>label</key>
+            <string>two</string>
+        </dict>
+
+        <!-- New window spawns to the right if vertical split, or bottom if horizontal split -->
+        <key>window_placement</key>
+        <string>second_child</string>
+
+        <!-- padding set to 12px -->
+        <key>top_padding</key>
+        <integer>12</integer>
+        <key>bottom_padding</key>
+        <integer>12</integer>
+        <key>left_padding</key>
+        <integer>12</integer>
+        <key>right_padding</key>
+        <integer>12</integer>
+        <key>window_gap</key>
+        <integer>12</integer>
+
+        <!-- Window border settings -->
+        <key>window_border</key>
+        <string>on</string>
+        <key>window_border_width</key>
+        <integer>6</integer>
+        <key>active_window_border_color</key>
+        <integer>4278224143</integer> <!-- 0xFF56E00F -->
+        <key>normal_window_border_color</key>
+        <integer>4281510341</integer> <!-- 0xFF555555 -->
+
+        <!-- Toggle window border with command -->
+        <key>toggle_border</key>
+        <array>
+            <dict>
+                <key>action</key>
+                <string>toggle</string>
+                <key>parameters</key>
+                <array>
+                    <string>border</string>
+                </array>
+            </dict>
+        </array>
+
+        <!-- Manage window rules -->
+        <key>window_rules</key>
+        <array>
+            <dict>
+                <key>app</key>
+                <string>^System Settings$</string>
+                <key>manage</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>app</key>
+                <string>^Calculator$</string>
+                <key>manage</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>app</key>
+                <string>^Stickies$</string>
+                <key>manage</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>app</key>
+                <string>^Local Host$</string>
+                <key>manage</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>app</key>
+                <string>^Finder$</string>
+                <key>manage</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>app</key>
+                <string>^Subler$</string>
+                <key>manage</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>app</key>
+                <string>^SuperDuper!$</string>
+                <key>manage</key>
+                <false
